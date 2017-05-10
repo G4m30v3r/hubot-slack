@@ -53,9 +53,9 @@ class SlackBot extends Adapter
     @client.on 'authenticated', @authenticated
     @client.on 'user_change', @userChange
 
-    @client.web.users.list @loadUsers
-    @robot.brain.on 'loaded', () =>
-      @client.web.users.list @loadUsers
+#    @client.web.users.list @loadUsers
+#    @robot.brain.on 'loaded', () =>
+#      @client.web.users.list @loadUsers
 
     # Start logging in
     @client.connect()
